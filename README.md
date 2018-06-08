@@ -1,6 +1,10 @@
 # Calculette
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+* http://extension.remotedev.io/
+* https://github.com/angular-redux/store/blob/master/articles/select-pattern.md
+* https://github.com/angular-redux/store
+* https://github.com/facebook/flux/tree/master/examples/flux-concepts
+* https://redux.js.org/basics/actions
 
 ## Development server
 
