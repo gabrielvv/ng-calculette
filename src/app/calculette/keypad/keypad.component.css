@@ -1,5 +1,0 @@
-:host {
-  display: table;
-}
-
-:host > div { display: table-row; }

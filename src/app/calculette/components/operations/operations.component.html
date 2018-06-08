@@ -1,0 +1,5 @@
+<div class="text">
+ <span *ngIf="op$ | async; let op">{{op.text}}</span>
+</div>
+<ng-content select="calc-score"></ng-content>
+<ng-content select="calc-steps"></ng-content>

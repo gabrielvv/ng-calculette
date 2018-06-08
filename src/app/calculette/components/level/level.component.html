@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let level of levels$ | async">
+    <a class="btn" (click)="select(level)" [ngClass]="{'active': level.selected}">
+      <span>{{level.label}}</span>
+    </a>
+  </li>
+</ul>

@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 export enum KeyState {
-  ENABLED,
-  DISABLED,
-  WRONG
+  ENABLED = 'enabled',
+  DISABLED = 'disabled',
+  WRONG = 'ko',
+  GOOD = 'ok',
 }
 
 export class Key {
@@ -16,7 +17,7 @@ export class Key {
 }
 
 @Component({
-  selector: 'key',
+  selector: 'calc-key',
   templateUrl: './key.component.html',
   styleUrls: ['./key.component.css']
 })

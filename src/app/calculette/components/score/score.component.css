@@ -1,0 +1,14 @@
+:host {
+  position: absolute;
+  font-size: 5vh;
+  top: 10px;
+  left: 10px;
+}
+
+.ok {
+  color: #4F4 !important;
+}
+
+.ko {
+  color: #F44 !important;
+}

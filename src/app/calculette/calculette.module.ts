@@ -1,20 +1,35 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { KeyComponent } from './key/key.component';
-import { KeypadComponent } from './keypad/keypad.component';
-import { CalculetteComponent } from './calculette.component';
 
-const COMPONENT = [
+import {
+  ModeComponent,
+  ScoreComponent,
+  OperationsComponent,
+  LevelComponent,
   KeyComponent,
   KeypadComponent,
-  CalculetteComponent,
-];
+  StepsComponent
+} from './components';
+
+import { CalculetteComponent } from './calculette.component';
+
+import { OperationsService } from './services';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  exports: [...COMPONENT],
-  declarations: [...COMPONENT]
+  exports: [CalculetteComponent],
+  declarations: [
+    CalculetteComponent,
+    ModeComponent,
+    ScoreComponent,
+    OperationsComponent,
+    LevelComponent,
+    KeyComponent,
+    KeypadComponent,
+    StepsComponent
+  ],
+  providers: [OperationsService]
 })
 export class CalculetteModule { }

@@ -1,0 +1,27 @@
+<ul>
+  <li *ngFor="let op of ops$ | async">
+    <a class="btn" (click)="select(op)" [ngClass]="{'active': op.selected}">
+      <span>{{op.label}}</span>
+    </a>
+  </li>
+  <!-- <li>
+    <a class="btn multplication active">
+      <span>x</span>
+    </a>
+  </li>
+  <li>
+    <a class="btn addition">
+      <span>+</span>
+    </a>
+  </li>
+  <li>
+    <a class="btn soustraction">
+      <span>-</span>
+    </a>
+  </li>
+  <li>
+    <a class="btn mix">
+      <span>?</span>
+    </a>
+  </li> -->
+</ul>

@@ -1,0 +1,55 @@
+:host {
+  display: table-cell;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+.btn {
+	text-decoration:none;
+	display:table;
+	height:100%;
+	width:100%;
+	color:#333;
+	background-color:#DFF;
+	box-sizing: border-box;
+	border-radius:3px;
+	box-shadow: 0 2px #888;
+	-webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.btn span {
+	display:table-cell;
+	vertical-align:middle;
+	height:100%;
+}
+
+.btn:hover {
+	background-color:#EEE;
+}
+
+.btn:active {
+	background-color:#EEE;
+	box-shadow: 0 2px #888;
+  	transform: translateY(1px);
+}
+
+:host .btn {
+	font-size:3vh;
+}
+:host .odd .btn, {
+	background-color:#BDD;
+}
+:host .btn.disabled {
+	background-color:#888;
+}
+:host .ok, .text.ok, .step.ok {
+	background-color:#4F4 !important;
+}
+:host .ko, .text.ko, .step.ko {
+	background-color:#F44 !important;
+}

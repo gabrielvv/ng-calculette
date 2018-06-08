@@ -1,0 +1,29 @@
+:host {
+  display: table;
+  height: 25%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px;
+  position: relative;
+  font-size: 13vh;
+}
+
+.text {
+  width: 100%;
+  border-radius: 1vmin;
+  background-color: #DFF;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  /* font-size: 18vh; */
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+:host calc-score {
+  position: absolute;
+  font-size: 300%;
+  top: 10px;
+  left: 10px;
+}

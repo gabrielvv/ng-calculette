@@ -1,0 +1,9 @@
+<div class="table">
+  <div class="row" *ngFor="let row of rows; index as i;">
+    <calc-key
+      *ngFor="let key of row; index as j;"
+      [key]="key"
+      (click)="onClick.emit(key.value)">
+    </calc-key>
+  </div>
+</div>

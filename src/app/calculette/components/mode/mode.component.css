@@ -1,0 +1,48 @@
+:host {
+  flex: 1;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+ul {
+  margin: 1% 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  border-radius: 3px;
+  width: 20%;
+  text-align: center;
+  margin: 0 1%;
+  cursor: pointer;
+}
+
+.btn.active {
+  background-color: #555;
+  color: #FFF;
+}
+
+.btn {
+  font-size: 3vh;
+  text-decoration: none;
+  display: table;
+  height: 100%;
+  width: 100%;
+  color: #333;
+  background-color: #DFF;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0 2px #888;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.btn span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
