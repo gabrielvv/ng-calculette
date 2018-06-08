@@ -6,8 +6,36 @@ import { Observable } from 'rxjs';
 
 @Component({
   selector: 'calculette',
-  templateUrl: './calculette.component.html',
-  styleUrls: ['./calculette.component.css']
+  template: `
+    <nav>
+      <calc-mode></calc-mode>
+      <calc-level></calc-level>
+    </nav>
+    <calc-operations>
+      <calc-score [ok]="ok" [ko]="ko"></calc-score>
+      <calc-steps [steps]="steps"></calc-steps>
+    </calc-operations>
+    <calc-keypad
+      (onClick)="attempt($event)"
+      [wrong]="wrongValue"
+      [good]="goodValue"
+      [reset]="resetTrigger"
+      [disabledKeys]="disabledKeys">
+    </calc-keypad>
+  `,
+  styles: [`
+    :host {
+      display: block;
+      height: 100%;
+      margin: 0 auto;
+      width: 100vmin;
+    }
+
+    nav {
+      width: 100%;
+      display: flex;
+    }
+  `]
 })
 export class CalculetteComponent implements OnInit {
 

@@ -1,11 +1,5 @@
 # Calculette
 
-* http://extension.remotedev.io/
-* https://github.com/angular-redux/store/blob/master/articles/select-pattern.md
-* https://github.com/angular-redux/store
-* https://github.com/facebook/flux/tree/master/examples/flux-concepts
-* https://redux.js.org/basics/actions
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
