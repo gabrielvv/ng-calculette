@@ -8,9 +8,8 @@ import { Key, KeyState } from '../key/key.component';
 })
 export class KeypadComponent implements OnInit, OnChanges {
 
-  @Output() onClick = new EventEmitter<number>();
-  //keys : Array<Key> = [];
   rows : Array<Key>[] = [];
+  @Output() onClick = new EventEmitter<number>();
   @Input() wrong : number;
   @Input() good : number;
   @Input('reset') resetTrigger : number;
@@ -38,8 +37,6 @@ export class KeypadComponent implements OnInit, OnChanges {
       k=>k.state!=KeyState.GOOD,
       k=>k.state=KeyState.ENABLED
     );
-    // https://www.jstips.co/en/javascript/create-range-0...n-easily-using-one-line/
-    //this.rows = Array.from(Array(parseInt(String(keys.length / 9))).keys());
   }
 
   findKey(filter, process){
@@ -64,9 +61,6 @@ export class KeypadComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes){
-
-    console.log("keypad changes", changes);
-
     if(changes.wrong){
       const v = changes.wrong.currentValue;
       this.findKey(

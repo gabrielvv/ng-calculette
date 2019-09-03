@@ -86,7 +86,7 @@ export class CalculetteComponent implements OnInit {
       this.disabledKeys = [];
       this.goodValue = value;
     }else{
-      if(++this.mistakes == 2){
+      if(this.mistakes++ == 2){
         this.helpme();
       }
       this.wrongValue = value;
@@ -100,7 +100,6 @@ export class CalculetteComponent implements OnInit {
     const disabledKeys = [];
     if(!this.currentOp) return;
 
-    console.log("helpme", this.currentOp.type)
   	for (var i = 0;i<100;i++) {
   		switch (this.currentOp.type) {
   			case OpType.MULTIPLICATION :

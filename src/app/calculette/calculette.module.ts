@@ -30,6 +30,6 @@ import { OperationsService } from './services';
     KeypadComponent,
     StepsComponent
   ],
-  providers: [OperationsService]
+  providers: []
 })
 export class CalculetteModule { }
