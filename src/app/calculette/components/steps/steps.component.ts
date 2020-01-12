@@ -20,7 +20,7 @@ export class StepsComponent implements OnInit {
   ngOnInit() {}
 
   ngOnChanges(changes){
-    console.log("changes", changes)
+    // TODO
   }
 
 }

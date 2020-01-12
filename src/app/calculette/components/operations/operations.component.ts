@@ -13,10 +13,9 @@ export class OperationsComponent implements OnInit, OnDestroy {
   subscription : any;
 
   constructor(private operationsService: OperationsService) {
-    console.log("OperationsComponent ctor");
     this.op$ = this.operationsService.getOp();
     this.op$.subscribe(op=>{
-      console.log("new op", op.text);
+      // TODO
     })
   }
 

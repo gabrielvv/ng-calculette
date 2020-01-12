@@ -84,7 +84,6 @@ export class OperationsService {
   }
 
   randomMode(){
-    console.log("random");
     this.setMode(this.modes.value[Math.floor(Math.random() * 3)]);
   }
 
@@ -149,7 +148,6 @@ export class OperationsService {
   	}
 
   	retOperation.type = opType;
-    console.log("setOperation", retOperation);
 
   	return this.currentOp.next(retOperation);
   }
